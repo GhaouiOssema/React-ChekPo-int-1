@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+:root {
+  --main-color: #FF9800;
+}
+
+.wrapper {
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: #33bfd1;
+}
+.header-styling{
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 50px #555;
+  padding: 20px 40px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-top: .5%;
+  font-size:20px;
+  font-weight:bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 30rem;
+}
+.header-styling span{
+  color:var(--main-color);
+}
+.option-box {
+  margin-left: 10%;
+  text-align: center;
+  background-color: #EEE;
+}
+.option-box .colors-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 5px 0 0;
+}
+.option-box .colors-list li {
+    width: 21px;
+    height: 21px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    border: 3px solid #EEE;
+}
+.option-box .colors-list li.active {
+  border-color: #FFF;
+}
+
+.option-box .colors-list li:first-child {
+  background-color: var(--main-color);
+}
+
+.option-box .colors-list li:nth-child(2) {
+  background-color: #E91E63;
+}
+
+.option-box .colors-list li:nth-child(3) {
+  background-color: #009688;
+}
+
+.option-box .colors-list li:nth-child(4) {
+  background-color: #03A9F4;
+}
+
+.option-box .colors-list li:nth-child(5) {
+  background-color: #4CAF50;
+}
+
+.option-box .colors-list li:nth-child(6) {
+  background-color: #795548;
+}
+
+.option-box .colors-list li:last-child {
+  background-color: #90A4AE;
+}
+
+.form-wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+  margin-top:3%;
+}
+
+Form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  color: var(--main-color);
+  font-weight: lighter;
+  font-style:bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+Form.Label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+input::placeholder {
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+
+.firstName {
+  margin-right: 1%;
+}
+
+.lastName {
+  margin-left: 1%;
+}
+
+.firstName,
+.lastName,
+.email,
+.Username {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.firstName,
+.lastName {
+  width: 49%;
+}
+
+.email,
+.password {
+  width: 100%;
+}
+
+.Btn {
+  border: 2px solid #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  font-weight: bold;
+}
